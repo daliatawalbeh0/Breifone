@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: rgb(193, 181, 181);
+}
+nav {
+  width: 100vw;
+  height: 17vh;
+  display: flex;
+  background-color: rgb(6, 6, 72);
+  align-items: center;
+  text-align: center;
+}
+
+nav span a:hover {
+  text-shadow: 0 0 2rem rgb(193, 181, 181);
+}
+.nav-tabs {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 70vw;
+}
+.textnav {
+  text-decoration: none;
+  font-size: xx-large;
+  font-family: Marker Felt, fantasy;
+  margin-right: 4%;
+}
+.myimg {
+  box-shadow: 0 0 25 rgb(13, 13, 13);
+}
+
+.logo1 {
+  display: block;
+  margin-left: 2%;
+  position: relative; /*For Animation*/
+  animation-name: example;
+  animation-duration: 3s;
+  cursor: pointer;
+}
+/* determining the style of animation */
+@keyframes example {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 100;
+    top: 0;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+.skills {
+  margin-left: 0;
+  margin-top: 0px;
+  padding-left: 20px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(193, 181, 181);
+  color: rgb(6, 6, 72);
+  font-family: Helvetica, sans-serif;
+}
+.languages {
+  margin-left: 20px;
+  margin-top: 30px;
+  padding-top: 10px;
+  color: rgb(6, 6, 72);
+  font-family: Helvetica, sans-serif;
+  font-size: 27px;
+  padding-left: 20px;
+}
+
+.project {
+  height: 100vh;
+  width: 100vw;
+  margin-left: 0;
+  margin-top: 0px;
+  padding-left: 20px;
+  background-color: rgb(193, 181, 181);
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+}
+.projects a {
+  text-decoration: none;
+  color: rgb(6, 6, 72);
+}
+.grid1 {
+  border: 0.15rem solid rgb(6, 6, 72);
+  border-radius: 4rem;
+  width: 28%;
+  margin-left: 3rem;
+  color: rgb(193, 181, 181);
+  font-family: Helvetica, sans-serif;
+  font-size: large;
+}
+.grid2 {
+  border: 0.15rem solid rgb(6, 6, 72);
+  border-radius: 4rem;
+  width: 28%;
+  margin-left: 3rem;
+  color: rgb(193, 181, 181);
+  font-family: Helvetica, sans-serif;
+  font-size: large;
+}
+.grid3 {
+  border: 0.15rem solid rgb(6, 6, 72);
+  border-radius: 4rem;
+  width: 28%;
+  margin-left: 3rem;
+  color: rgb(193, 181, 181);
+  font-family: Helvetica, sans-serif;
+  font-size: large;
+}
+.linkedin {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: larger;
+}
+.gmail {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: larger;
+}
+.github {
+  grid-row: 2;
+  grid-column: 1;
+  font-size: larger;
+}
+.insta {
+  grid-row: 2;
+  grid-column: 2;
+  font-size: larger;
+}
+footer {
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(6, 6, 72);
+  display: flex;
+  border: 3rem solid rgb(6, 6, 72);
+  background-color: rgb(6, 6, 72);
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+}
+.foot {
+  color: rgb(193, 181, 181);
+  font-size: larger;
+  font-family: Marker Felt, fantasy;
+  display: inline;
+  padding-right: 2rem;
+  margin-left: 2rem;
+}
+
+.me {
+  margin-left: 3rem;
+  display: grid;
+  gap: 1rem;
+}
+.mycaption {
+  display: inline;
+  color: rgb(193, 181, 181);
+  margin-left: 15rem;
+  font-family: Marker Felt, fantasy;
+  font-size: large;
+}
+.myloc {
+  display: inline;
+  color: rgb(193, 181, 181);
+  margin-left: 20rem;
+  font-family: Marker Felt, fantasy;
+  font-size: large;
+  margin-top: -0.5rem;
+}
+.myimg {
+  filter: drop-shadow(0.25rem 0.25rem 0.5rem rgb(6, 6, 72));
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*Styling For different screens*/
+/* Mobile (up to 768px) */
+@media only screen and (max-width: 768px) {
+  /* Styles for mobile screens */ /*small*/
+  nav {
+    height: auto;
+  }
+  body {
+    background-color: rgb(193, 181, 181);
+  }
+  .nav-tabs {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  .Home {
+    /*flex-direction: row;*/
+    background-color: rgb(193, 181, 181);
+    width: 100vw;
+    height: 100vh;
+  }
+  .about {
+    font-size: xx-small;
+    margin-top: 0;
+    margin-left: 2%;
+  }
+  .aboutme {
+    font-size: xx-small;
+    width: 75vw;
+    font-family: Marker Felt, fantasy;
+    justify-content: center;
+    color: rgb(6, 6, 72);
+  }
+  .about span {
+    /*background-color: red;*/
+  }
+  .about span i {
+    font-size: smaller;
+  }
+  .about p {
+    font-size: xx-small;
+  }
+  #aboutmeP1,
+  #aboutmeP2 {
+    font-size: xx-small;
+  }
+
+  #contactMeTitle {
+    margin-left: 2%;
+  }
+  #smallcontact{
+    gap: 1rem;
+    width: 40vw;
+    height: 30vh;
+    color: rgb(6, 6, 72);
+    margin-left: 25%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .textnav {
+    font-size: x-large;
+    margin: 0 1rem;
+  }
+
+  .myimg {
+    width: 100%;
+    margin-top: 8rem;
+    margin-left:auto;
+  }
+  .linkedin,
+  .gmail,
+  .github,
+  .insta {
+    font-size: x-large;
+  }
+}
+
+/* Tablet (up to 1024px) */
+@media only screen and (max-width: 1024px) {
+  /* Styles for tablet screens */
+}
+
+/* Desktop (up to 1200px) */
+@media only screen and (max-width: 1200px) {
+  /* Styles for desktop screens */
+}
+
+/* Large Desktop (above 1200px) */
+@media only screen and (min-width: 1200px) {
+  /* Styles for large desktop screens */ /*Full*/
+  .Home {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(193, 181, 181);
+    width: 100vw;
+    height: 100vh;
+  }
+  .aboutme {
+    font-family: Marker Felt, fantasy;
+    font-size: x-large;
+    justify-content: center;
+    color: rgb(6, 6, 72);
+  }
+  .about {
+    width: 50vw;
+    margin-left: 5%;
+  }
+  #aboutme,
+  #contactMeTitle {
+    margin-left: 40%;
+  }
+
+  .contactme {
+    display: grid;
+    gap: 3rem;
+    width: 40vw;
+    height: 30vh;
+    color: rgb(6, 6, 72);
+    margin-left: 25%;
+    font-size: larger;
+  }
+}
